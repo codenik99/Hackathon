@@ -1,10 +1,72 @@
 .App {
   text-align: center;
+  background-color: #1e1f26;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 5px solid #61dafb;
+}
+
+.App-header {
+  font-size: calc(12px + 1.5vmin);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #ffcb6b;
+  text-shadow: 2px 2px 5px #000;
+}
+
+ul.fruits-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+ul.fruits-list li {
+  background: linear-gradient(145deg, #61dafb, #21a1f1);
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  cursor: pointer;
+}
+
+ul.fruits-list li:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  background: linear-gradient(145deg, #21a1f1, #61dafb);
+}
+
+.App-link {
+  color: #61dafb;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.App-link:hover {
+  color: #ffcb6b;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +75,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
